@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	width: 100%;
+	height: 100%;
+	/*background-color: #f5f5f5;*/
+}
+
+/*---------------Header-----------------*/
+
+.playball {
+	font-family: 'Playball', cursive;
+	text-shadow: 1px 1px 1px #DDD;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	font-weight: 500;
+}
+
+a, a:hover {
+	text-decoration: none;
+	color: #f4623a;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.bg-img {
+	width: 100%;
+	height: 91%;
+    background: linear-gradient(180deg, rgba(228,222,216,0.6) 0%, rgba(11,11,11,0.8) 100%), url('../images/bg-image.jpg');
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-attachment: fixed;
+}
+
+.info-resume {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.info-resume img.avatar {
+	border-radius: 50%;
+	box-shadow: 0px 0px 6px #000;
+	transition: all 0.5s;
+}
+
+.info-resume img.avatar:hover {
+	transform: scale(1.05);
+}
+
+.info-resume h2.text-white-7 {
+	color: rgba(255,255,255,1);
+	font-size: 40px;
+	font-weight: 700;
+	text-shadow: 1px 1px 3px #000;
+	padding-top: 10px;
+}
+
+.info-resume p {
+	color: rgba(255,255,255,0.8);
+	font-size: 20px;
+	font-weight: 500;
+	text-shadow: 1px 1px 3px #000;
+}
+
+/*----menu----*/
+
+.navbar-collapse ul.menu {
+	margin: auto;
+	text-transform: uppercase;
+}
+
+.navbar-collapse ul.menu li {
+	padding: 0px 20px;
+}
+
+.navbar-collapse ul.menu li a.nav-link {
+	color: rgba(255,255,255,0.7);
+	font-weight: 500;
+	transition: all 0.3s;
+}
+
+.navbar-collapse ul.menu li a.nav-link:hover {
+	color: rgba(255,255,255,1);
+	text-shadow: 1px 1px 3px #222;
+}
+
+/*--------------Content----------------*/
+
+/*---About-me---*/
+.content .about-me {
+	
+}
+
+.about-me h2, 
+.education h2,
+.skill h2,
+.exp h2 {
+	font-weight: 700;
+	font-size: 40px;
+	text-align: center;
+}
+
+.about-me h2:first-letter,
+.education h2:first-letter,
+.skill h2:first-letter,
+.exp h2:first-letter {
+	color: #7db80d;
+}
+
+.about-me h2:after,
+.education h2:after,
+.skill h2:after,
+.exp h2:after {
+	content: "";
+	background-color: #f4623a;
+	width: 3.25rem;
+	height: 3px;
+	display: block;
+	margin: 30px auto;
+}
+
+.full-info {
+	padding-left: 30%;
+}
+
+i.color-icon {
+	color: #7db80d;
+}
+
+/*---Education*/
+
+.info-edu {
+	text-align: center;
+}
+
+/*---Skills---*/
+
+body .bg-progress {
+	background-color: #ccc;
+}
+
+div.info-skill {
+	text-align: center;
+}
+
+.html-skill,
+.css-skill,
+.js-skill,
+.sql-skill {
+	margin: auto;
+}
+
+.html-skill,
+.css-skill {
+	padding-bottom: 20px;
+}
+
+/*---Exp---*/
+
+body div.exp div.row div.info-exp {
+	position: relative;
+	transform-style: preserve-3d;
+	width: 400px;
+	height: 300px;
+}
+
+body div.exp div.row div.info-exp .img-exp {
+	width: 400px;
+	height: 300px;
+	overflow: hidden;
+}
+
+.info-exp .img-exp img {
+	transition: transform 0.4s;
+}
+
+.info-exp .view-info-exp {
+	background-color: #2c3f52;
+	width: 200px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 15px;
+	padding: 20px;
+	opacity: 0;	
+	backface-visibility: hidden;
+	transform-origin: 0 0;
+	transform: rotateY(-90deg);
+	transition: transform 0.4s, opacity 0.1s 0.3s;
+}
+
+div.view-info-exp a {
+	position: absolute;
+	background-color: #fff;
+	right: 20px;
+	bottom: 20px;
+	padding: 6px;
+}
+    
+.info-exp:hover .view-info-exp {
+	opacity: 1;
+	transform: rotateY(0deg);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+.info-exp:hover img.img-hover {
+	transform: translateX(25%);
+}
