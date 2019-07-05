@@ -13,11 +13,20 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Playball&display=swap" rel="stylesheet">
 
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700&display=swap" rel="stylesheet">
+
 	<script src="https://kit.fontawesome.com/df8fdd30a5.js"></script>
 
 	<link rel="stylesheet" href="./css/style.css">
+
+	<link rel="stylesheet" href="./css/animate.css">
+
+	<link rel="stylesheet" href="./css/query.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 	
 	<!-- ----Header---- -->
 
@@ -31,8 +40,8 @@
 			</div>
 		</div>		
 		<!-- ----menu---- -->
-		<div class="menu">						
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="menu-content" id="menu">						
+			<nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbar-scroll">
 				<div class="container">	
 					<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -41,22 +50,22 @@
 					<div class="collapse navbar-collapse" id="collapsibleNavbar">
 						<ul class="navbar-nav menu">
 							<li class="nav-item">
-								<a class="nav-link" href="#">About me</a>
+								<a class="nav-link" href="#about">About me</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Education</a>
+								<a class="nav-link" href="#education">Education</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Skills</a>
+								<a class="nav-link" href="#skill">Skills</a>
 							</li> 
 							<li class="nav-item">
-								<a class="nav-link" href="#">Experiences</a>
+								<a class="nav-link" href="#exp">Experiences</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Portfolio</a>
+								<a class="nav-link" href="#portfolio">Portfolio</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">Contact</a>
+								<a class="nav-link" href="#contact">Contact</a>
 							</li>
 						</ul>
 					</div> 
@@ -70,46 +79,60 @@
 	<div class="content">
 		<div class="container">
 			<!-- about-me -->
-			<div class="about-me p-5">
+			<div class="about-me p-5" id="about">
 				<h2 class="playball">About Me</h2>
-				<div class="full-info">
-					<div class="date-of-birth py-2">
-						<i class="far fa-calendar-alt color-icon fa-fw"></i>
-						<span> September 29, 1997</span>
+				<div class="row">
+					<div class="col-sm-12 col-lg-10 caption wow fadeInUp">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eligendi, voluptas et cum vitae ab ut aliquam id necessitatibus quidem quo natus, optio quia iusto quae facilis accusantium minus cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					</div>
-					<div class="gender py-2">
-						<i class="fas fa-venus-mars color-icon fa-fw"></i>
-						<span>Male</span>
-					</div>	
-					<div class="phone py-2">
-						<i class="fas fa-phone-alt color-icon fa-fw"></i>
-						<span>(+84) 339732297</span>
+				</div>
+				<div class="row">
+					<div class="full-info wow fadeInUp">
+						<div class="date-of-birth py-2">
+							<i class="far fa-calendar-alt color-icon fa-fw"></i>
+							<span> September 29, 1997</span>
+						</div>
+						<div class="gender py-2">
+							<i class="fas fa-venus-mars color-icon fa-fw"></i>
+							<span>Male</span>
+						</div>	
+						<div class="phone py-2">
+							<i class="fas fa-phone-alt color-icon fa-fw"></i>
+							<span>0339732297</span>
+						</div>
+						<div class="email py-2">
+							<i class="fas fa-envelope-open-text color-icon fa-fw"></i>	
+							<span>huyhoangepu97@gmail.com</span>
+						</div>
+						<div class="address py-2">
+							<i class="fas fa-map-marker-alt color-icon fa-fw"></i>	
+							<span>689 Pham Van Dong, Bac Tu Liem district, Hanoi, Vietnam</span>
+						</div>	
 					</div>
-					<div class="email py-2">
-						<i class="fas fa-envelope-open-text color-icon fa-fw"></i>	
-						<span>huyhoangepu97@gmail.com</span>
-					</div>
-					<div class="address py-2">
-						<i class="fas fa-map-marker-alt color-icon fa-fw"></i>	
-						<span>689 Pham Van Dong, Bac Tu Liem district, Hanoi, Vietnam</span>
-					</div>	
-				</div>					
+				<!-- </div> -->
+				</div>
 			</div>
 			<!-- education -->
-			<div class="education p-5">
+			<div class="education p-5" id="education">
 				<h2 class="playball">Education</h2>
-				<div class="row info-edu">
-					<div class="col-sm-4 university">
+				<div class="row">
+					<div class="col-sm-12 col-lg-10 caption wow fadeInUp">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eligendi, voluptas et cum vitae ab ut aliquam id necessitatibus quidem quo natus, optio quia iusto quae facilis accusantium minus cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</div>
+				</div>
+				
+				<div class="row info-edu wow fadeInUp">
+					<div class="col-md-4 university">
 						<i class="fas fa-graduation-cap fa-2x color-icon pb-2"></i>
 						<h5>University</h5>
-						<p>Electric Power University (2015-2020)</p>
+						<p>Electric Power University (2015 - 2020)</p>
 					</div>
-					<div class="col-sm-4 tech">
+					<div class="col-md-4 tech">
 						<i class="fas fa-laptop-code fa-2x color-icon pb-2"></i>
 						<h5>Faculty</h5>
 						<p>Information Technology</p>
 					</div>
-					<div class="col-sm-4 major">
+					<div class="col-md-4 major">
 						<i class="fab fa-btc fa-2x color-icon pb-2"></i>
 						<h5>Mojor</h5>
 						<p>E - Commerce</p>
@@ -117,79 +140,231 @@
 				</div>
 			</div>
 			<!-- Skills -->
-			<div class="skill p-5">
+			<div class="skill p-5" id="skill">
 				<h2 class="playball">Skills</h2>
-				<div class="row info-skill">
-					<div class="col-sm-5 html-skill">
+				<div class="row">
+					<div class="col-sm-12 col-lg-10 caption wow fadeInUp">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eligendi, voluptas et cum vitae ab ut aliquam id necessitatibus quidem quo natus, optio quia iusto quae facilis accusantium minus cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</div>
+				</div>
+				<div class="row info-skill wow fadeInUp">
+					<div class="col-sm-6 col-md-5 html-skill">
 						<h6>HTML</h6>
 						<div class="progress bg-progress">
-							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: #7db80d;"></div>
+							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: #7db80d; border-radius: 4px;"></div>
 						</div>
+
+						<!-- <div class="progress-bars">
+							<div class="line" data-count="75">
+								<span></span>
+							</div>
+						</div> -->
+
 					</div>
-					<div class="col-sm-5 css-skill">
+					<div class="col-sm-6 col-md-5 css-skill">
 						<h6>CSS</h6>
 						<div class="progress bg-progress">
-							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%; background-color: #7db80d;"></div>
+							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%; background-color: #7db80d; border-radius: 4px;"></div>
 						</div>
+						<!-- <div class="progress-bars">
+							<div class="line" data-count="70">
+								<span></span>
+							</div>
+						</div> -->
 					</div>
-					<div class="col-sm-5 js-skill">
+					<div class="col-sm-6 col-md-5 js-skill">
 						<h6>JAVASCRIPT</h6>
 						<div class="progress bg-progress">
-							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%; background-color: #7db80d;"></div>
+							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 35%; background-color: #7db80d;border-radius: 4px;"></div>
 						</div>
+						<!-- <div class="progress-bars">
+							<div class="line" data-count="35">
+								<span></span>
+							</div>
+						</div> -->
 					</div>
-					<div class="col-sm-5 sql-skill">
-						<h6>SQL-SERVER</h6>
+					<div class="col-sm-6 col-md-5 git-skill">
+						<h6>GIT</h6>
 						<div class="progress bg-progress">
-							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%; background-color: #7db80d;"></div>
+							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 55%; background-color: #7db80d;border-radius: 4px;"></div>
 						</div>
+						<!-- <div class="progress-bars">
+							<div class="line" data-count="60">
+								<span></span>
+							</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
 			<!-- Experiences -->
-			<div class="exp p-5 m-auto">
+			<div class="exp p-5" id="exp">
 				<h2 class="playball">Experiences</h2>
-				<div class="row pb-4">
-					<div class="col-sm-5 info-exp">
+				<div class="row">
+					<div class="col-sm-12 col-lg-10 caption wow fadeInUp">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eligendi, voluptas et cum vitae ab ut aliquam id necessitatibus quidem quo natus, optio quia iusto quae facilis accusantium minus cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</div>
+				</div>
+				<div class="row row-flex wow fadeInUp">
+					<div class="col-lg-4 info-exp">
 						<div class="img-exp">
-							<img class="img-hover" src="https://tympanus.net/Tutorials/CaptionHoverEffects/images/6.png" alt="">
+							<img class="img-hover" src="./images/baoviet.png" alt="BaoViet">
 						</div>
 						<div class="view-info-exp">
-							<h5>Kangaroo</h5>
-							<span>by FPT Information System</span>					
+							<h6>ERP Deployment Staff</h6>
+							<span>at FIS</span>
+							<p>11/2018 - 12/2018</p>					
 							<a href="#">View more</a>
 						</div>
 					</div>
-					<div class="col-sm-5 info-exp">
+					<div class="col-lg-4 info-exp">
 						<div class="img-exp">
-							<img class="img-hover" src="https://tympanus.net/Tutorials/CaptionHoverEffects/images/6.png" alt="">
+							<img class="img-hover" src="./images/ta.png" alt="Kangaroo">
 						</div>
 						<div class="view-info-exp">
-							<h5>Kangaroo</h5>
-							<span>by FPT Information System</span>					
+							<h6>ERP Deployment Staff</h6>
+							<span>at FIS</span>	
+							<p>01/2019 - 02/2019</p>				
+							<a href="#">View more</a>
+						</div>
+					</div>
+					<div class="col-lg-4 info-exp">
+						<div class="img-exp">
+							<img class="img-hover" src="./images/VNA.png" alt="Vietnam Airlines">
+						</div>
+						<div class="view-info-exp">
+							<h6>ERP Deployment Staff</h6>
+							<span>at FIS</span>	
+							<p>03/2019 - 04/2019</p>				
 							<a href="#">View more</a>
 						</div>
 					</div>
 				</div>
+			</div>
+			<!-- portfolio -->
+			<div class="portfolio p-5" id="portfolio">
+				<h2 class="playball">Portfolio</h2>
 				<div class="row">
-					<div class="col-sm-5 info-exp">
-						<div class="img-exp">
-							<img class="img-hover" src="https://tympanus.net/Tutorials/CaptionHoverEffects/images/6.png" alt="">
-						</div>
-						<div class="view-info-exp">
-							<h5>Kangaroo</h5>
-							<span>by FPT Information System</span>					
-							<a href="#">View more</a>
+					<div class="col-sm-12 col-lg-10 caption wow fadeInUp">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eligendi, voluptas et cum vitae ab ut aliquam id necessitatibus quidem quo natus, optio quia iusto quae facilis accusantium minus cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</div>
+				</div>
+				<div class="row portfolio-align">
+					<div class="col-6 col-sm-6 col-md-6 col-md-6-align col-lg-3 portfolio-md wow fadeInUp">
+						<div class="view-pj">		
+							<div class="wrap-img">
+								<img src="./images/pj2.PNG" alt="">
+							</div>
+							<div class="bg-pj">
+								<div class="info-pj">
+									<h5>My Porfolio</h5>
+									<p>HTML - CSS - JAVASCRIPT</p>
+									<a data-content="Quick view" href=""><i class="fas fa-search"></i></a>
+									<a data-content="Download" href=""><i class="fas fa-download"></i></a>	
+								</div>
+							</div>  
 						</div>
 					</div>
-					<div class="col-sm-5 info-exp">
-						<div class="img-exp">
-							<img class="img-hover" src="https://tympanus.net/Tutorials/CaptionHoverEffects/images/6.png" alt="">
+					<div class="col-6 col-sm-6 col-md-6 col-lg-3 portfolio-md wow fadeInUp">
+						<div class="view-pj">						
+							<div class="wrap-img">
+								<img src="./images/pj1.PNG" alt="">
+							</div>
+							<div class="bg-pj">
+								<div class="info-pj">
+									<h5>Start Bootstrap</h5>
+									<p>HTML - BOOTSTRAP</p>
+									<a data-content="Quick view" href=""><i class="fas fa-search"></i></a>
+									<a data-content="Download" href=""><i class="fas fa-download"></i></a>
+								</div>
+							</div>  
 						</div>
-						<div class="view-info-exp">
-							<h5>Kangaroo</h5>
-							<span>by FPT Information System</span>					
-							<a href="#">View more</a>
+					</div>
+					<div class="col-6 col-sm-6 col-md-6 col-lg-3 portfolio-md wow fadeInUp">
+						<div class="view-pj">						
+							<div class="wrap-img">
+								<img src="./images/pj4.PNG" alt="">
+							</div>
+							<div class="bg-pj">
+								<div class="info-pj">
+									<h5>Truyen365 Theme</h5>
+									<p>HTML - CSS - ADO.NET</p>
+									<a data-content="Quick view" href=""><i class="fas fa-search"></i></a>
+									<a data-content="Download" href=""><i class="fas fa-download"></i></a>
+								</div>
+							</div>  
+						</div>
+					</div>
+					<div class="col-6 col-sm-6 col-md-6 col-lg-3 portfolio-md wow fadeInUp">
+						<div class="view-pj">						
+							<div class="wrap-img">
+								<img src="./images/pj3.PNG" alt="">
+							</div>
+							<div class="bg-pj">
+								<div class="info-pj">
+									<h5>Phimhay365 Theme</h5>
+									<p>HTML - CSS - ADO.NET</p>
+									<a data-content="Quick view" href=""><i class="fas fa-search"></i></a>
+									<a data-content="Download" href=""><i class="fas fa-download"></i></a>	
+								</div>
+							</div>  
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Contact -->
+			<div class="contact p-5" id="contact">
+				<h2 class="playball">Contact</h2>
+				<div class="row">
+					<div class="col-sm-12 col-lg-10 caption wow fadeInUp">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore eligendi, voluptas et cum vitae ab ut aliquam id necessitatibus quidem quo natus, optio quia iusto quae facilis accusantium minus cumque! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</div>
+				</div>
+				<div class="row contact-align wow fadeInUp">
+					<div class="col-lg-6">
+						<div class="full-contact">
+							<div class="phone-contact py-2">
+								<i class="fas fa-phone-alt color-icon fa-2x fa-fw"></i>
+								<span>0339732297</span>
+							</div>
+							<div class="email-contact py-2">
+								<i class="fas fa-envelope-open-text color-icon fa-2x fa-fw"></i>	
+								<span>huyhoangepu97@gmail.com</span>
+							</div>
+							<div class="address-contact py-2">
+								<i class="fas fa-map-marker-alt color-icon fa-2x fa-fw"></i>	
+								<span>689 Pham Van Dong, Bac Tu Liem district, Hanoi, Vietnam</span>
+							</div>
+							<a href="">
+								<div class="download-portfolio py-2">
+									<i class="fas fa-download color-icon fa-2x fa-fw"></i>
+									<span>Download My Portfolio</span>
+								</div>
+							</a>
+							<div class="social-contact">
+								<a href=""><i class="fab fa-facebook fa-fw fa-2x"></i></a>
+								<a href=""><i class="fab fa-instagram fa-fw fa-2x"></i></a>
+								<a href=""><i class="fab fa-twitter fa-fw fa-2x"></i></a>
+								<a href=""><i class="fab fa-github fa-fw fa-2x"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 align-contact">
+						<div class="form-contact">
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email">
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+									placeholder="Your Message"></textarea>
+								</div>
+								<div class="text-center">
+									<button class="btn-send">Send Message</button>
+								</div>								
+							</form>	
 						</div>
 					</div>
 				</div>
@@ -197,6 +372,20 @@
 		</div>
 
 	</div>
+	
+	<!-- ---------Footer-------------- -->
 
+	<div class="footer">
+		<div class="container-fluid footer-copyright">
+			Copyright © 2019 All rights reserved | This template is made with Đinh Huy Hoàng
+		</div>
+	</div>
+
+	<!-- Back To Top -->
+
+	<div id="back-to-top">
+		<i class="fas fa-angle-double-up fa-fw fa-1x"></i>
+	</div>
 </body>
+	<script src="./js/resume.js"></script>
 </html>
